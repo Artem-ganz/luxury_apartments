@@ -1,0 +1,29 @@
+.hero-img {
+    width: calc($index * 33);
+    position: absolute;
+    left: 44vw;              // !!!!
+    top: 40vh;
+    z-index: -1;
+}
+
+.hero-title {
+ font-size: calc($index * 8);  
+ position: absolute;
+ width: min-content; 
+ bottom: 12vh;
+ left: 5vw;                  // !!!!
+
+ line-height: .9;
+ @media (max-width: 468px) {
+    bottom: 20vh;
+ }
+}
+
+.hero-header {
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Outfit', sans-serif;
+    color: $color-header;
+}

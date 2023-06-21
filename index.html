@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentiz</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#085d13">
+    <link rel="stylesheet" href="./icomoon/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <!-- при скроле могли манипулировать значениями, делать анимацию -->
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <!-- планый скрол -->
+    <script src="./libs/gsap/ScrollSmoother.min.js"defer></script>
+
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <script src="./js/swiper.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/slick.js" defer></script>
+</head>
+<body>
+   <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class='header__container'>
+                    <a href="#" class="header__logo">
+                        <img src="./img/logo.svg" alt="logo-header">
+                    </a>
+                    <div class="header__navigation">
+                        <nav class="header__menu menu">
+                            <ul class="menu__body">
+                                <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
+                                <li class="menu__item"><a href="#about" class="menu__link">About us</a></li>
+                                <li class="menu__item"><a href="#buying" class="menu__link">Buying</a></li>
+                                <li class="menu__item"><a href="#renting" class="menu__link">Renting</a></li>
+                                <li class="menu__item"><a href="#selling" class="menu__link">Selling</a></li>
+                                <li class="menu__item"><a href="#contact" class="menu__link">Contact us</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__buttons">
+                            <button class="login header__btn">Login</button>
+                            <button class="register header__btn">Sign Up</button>
+                        </div>
+                        <div class="menu-icon">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+                <img data-speed=".6" class="hero-img" src="./img/two/11.jpg" alt="hero-img">
+                <div class="container">
+                    <div data-speed=".75" class="hero-header">
+                        <h1 class="hero-title">Perfect Home</h1>
+                    </div>
+                </div>
+            </header>
+        
+            <main class="page">
+                <div class="portfolio">
+                    <div class="conteiner">
+                        <div class="gallery">
+                            <div data-speed=".9" class="gallery-left">
+                                <div class="img-holder">
+                                    <img class="gallery-item" src="./img/two/10.jpg" alt="image">
+                                </div>
+                                <div class="img-holder">
+                                    <img class="gallery-item" src="./img/two/13.jpg" alt="image">
+                                </div>
+                                <div class="text-block gallery-item">
+                                    <h2 class="text-block__h">On our website you can easily choose and book the house that suits you best.</h2>
+                                    <p class="text-block__p">All our houses are fully equipped and equipped with everything necessary for a comfortable stay. You can choose a house that suits you in terms of the number of rooms and beds, the presence of a kitchen, a pool or jacuzzi, and other amenities.</p>
+                                </div>
+                                <div class="img-holder">
+                                    <img class="gallery-item" src="./img/two/4.jpg" alt="image">
+                                </div>
+                            </div>
+                            
+                            <div data-speed="1.1" class="gallery-right">
+                                <div class="text-block gallery-item">
+                                    <h2 class="text-block__h">Welcome to our home rental site!</h2>
+                                    <p class="text-block__p">We specialize in providing cozy and comfortable holiday homes in which you can enjoy your vacation, holiday or simply retire for the weekend.</p>
+                                    <p class="text-block__p">We offer a wide range of homes in different areas so you can choose the one that suits you best. We have houses on the coast, in the mountains, in the forest, surrounded by nature or close to the main attractions. We are confident that you will find the perfect home for your holiday.</p>
+                                </div>
+                                <div class="img-holder">
+                                    <img class="gallery-item" src="./img/two/14.jpg" alt="image">
+                                </div>
+                                <div class="img-holder">
+                                    <img class="gallery-item" src="./img/two/7.jpg" alt="image">
+                                </div>
+                                <div class="img-holder">
+                                    <img class="gallery-item" src="./img/two/5.jpg" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="featured">
+                    <div class="featured__container">
+                        <h2 class="featured__title title">OUR PARTNERS</h2>
+                        <div class="featured__box">
+                            <div class="featured__item">
+                                <img src="./img/logos/1.svg" alt="img-fead" class="featured__img">
+                            </div>
+                            <div class="featured__item">
+                                <img src="./img/logos/2.svg" alt="img-fead" class="featured__img">
+                            </div>
+                            <div class="featured__item">
+                                <img src="./img/logos/3.svg" alt="img-fead" class="featured__img">
+                            </div>
+                            <div class="featured__item">
+                                <img src="./img/logos/4.svg" alt="img-fead" class="featured__img">
+                            </div>
+                            <div class="featured__item">
+                                <img src="./img/logos/5.svg" alt="img-fead" class="featured__img">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="popular" id="home">
+                    <div class='popular__container'>
+                        <h2 class="popular__title title">Popular Residence</h2>
+                        <div class="popular__slider">
+                            <div class="swiper popular-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide popular-slide">
+                                        <div class="popular-slide__thumb">
+                                            <img src="./img/three/Rectangle 122 (1).png" alt="img description">
+                                        </div>
+                                        <div class="popular-slide__text">
+                                            <div class="popular-slide__title">Aliva Priva Jalvin</div>
+                                            <div class="popular-slide__desc text">Canada, Ottawa</div>
+                                        </div>
+                                        <div class="popular-slide__labels">
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bed.svg" alt="img description">
+                                                <span>4 Beds</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bath.svg" alt="img description">
+                                                <span>2 Bath</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/square.svg" alt="img description">
+                                                <span>1203 Sqft.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide popular-slide">
+                                        <div class="popular-slide__thumb">
+                                            <img src="./img/three/Rectangle 122 (2).png" alt="img description">
+                                        </div>
+                                        <div class="popular-slide__text">
+                                            <div class="popular-slide__title">Hard line orchar</div>
+                                            <div class="popular-slide__desc text">Spain, Barcelona</div>
+                                        </div>
+                                        <div class="popular-slide__labels">
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bed.svg" alt="img description">
+                                                <span>5 Beds</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bath.svg" alt="img description">
+                                                <span>3 Bath</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/square.svg" alt="img description">
+                                                <span>1520 Sqft.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide popular-slide">
+                                        <div class="popular-slide__thumb">
+                                            <img src="./img/three/Rectangle 122.png" alt="img description">
+                                        </div>
+                                        <div class="popular-slide__text">
+                                            <div class="popular-slide__title">Allpine lenevote</div>
+                                            <div class="popular-slide__desc text">USA , New York</div>
+                                        </div>
+                                        <div class="popular-slide__labels">
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bed.svg" alt="img description">
+                                                <span>2 Beds</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bath.svg" alt="img description">
+                                                <span>1 Bath</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/square.svg" alt="img description">
+                                                <span>744 Sqft.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide popular-slide">
+                                        <div class="popular-slide__thumb">
+                                            <img src="./img/three/Rectangle 122 (4).png" alt="img description">
+                                        </div>
+                                        <div class="popular-slide__text">
+                                            <div class="popular-slide__title">Aliva Priva Jalvin</div>
+                                            <div class="popular-slide__desc text">Canada, Ottawa</div>
+                                        </div>
+                                        <div class="popular-slide__labels">
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bed.svg" alt="img description">
+                                                <span>4 Beds</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bath.svg" alt="img description">
+                                                <span>1 Bath</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/square.svg" alt="img description">
+                                                <span>1110 Sqft.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide popular-slide">
+                                        <div class="popular-slide__thumb">
+                                            <img src="./img/three/Rectangle 122 (5).png" alt="img description">
+                                        </div>
+                                        <div class="popular-slide__text">
+                                            <div class="popular-slide__title">Hard line orchar</div>
+                                            <div class="popular-slide__desc text">Spain, Barcelona</div>
+                                        </div>
+                                        <div class="popular-slide__labels">
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bed.svg" alt="img description">
+                                                <span>5 Beds</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bath.svg" alt="img description">
+                                                <span>1 Bath</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/square.svg" alt="img description">
+                                                <span>988 Sqft.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide popular-slide">
+                                        <div class="popular-slide__thumb">
+                                            <img src="./img/three/Rectangle 122 (3).png" alt="img description">
+                                        </div>
+                                        <div class="popular-slide__text">
+                                            <div class="popular-slide__title">Allpine lenevote</div>
+                                            <div class="popular-slide__desc text">USA , New York</div>
+                                        </div>
+                                        <div class="popular-slide__labels">
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bed.svg" alt="img description">
+                                                <span>5 Beds</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/bath.svg" alt="img description">
+                                                <span>2 Bath</span>
+                                            </div>
+                                            <div class="popular-slide__label">
+                                                <img src="./img/icons/slider/square.svg" alt="img description">
+                                                <span>1202 Sqft.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-buttons">
+                                <div class="popular-slider-btn popular-slider-prev swiper-button-prev"></div>
+                                <div class="popular-slider-btn popular-slider-next swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="popular__link">
+                            <a href="#" class="btn">View all properties</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="why"  id="renting">
+                    <div class="why__container">
+                        <h2 class="title why__title">Why to choose us</h2>
+                        <div class="why__body">
+                            <div class="why__item item-why">
+                                <div class="item-why__img">
+                                    <img src="./img/icons/slider/001-loupe.png" alt="image description">
+                                </div>
+                                <div class="item-why__title">
+                                    <h3>Easy to find</h3>
+                                </div>
+                                <div class="item-why__text">
+                                    <p class="text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+                                </div>
+                            </div>
+                            <div class="why__item item-why">
+                                <div class="item-why__img">
+                                    <img src="./img/icons/slider/002-tag.png" alt="image description">
+                                </div>
+                                <div class="item-why__title">
+                                    <h3>Affordable Prices</h3>
+                                </div>
+                                <div class="item-why__text">
+                                    <p class="text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+                                </div>
+                            </div>
+                            <div class="why__item item-why">
+                                <div class="item-why__img">
+                                    <img src="./img/icons/slider/003-quick.png" alt="image description">
+                                </div>
+                                <div class="item-why__title">
+                                    <h3>Quickly Process</h3>
+                                </div>
+                                <div class="item-why__text">
+                                    <p class="text">Ac, gravida in diam vitae, nec mattis lectus quam pretium amet facilisis. Urna, massa aliqua dui pellentesque.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="reviews">                        
+                        <div class='reviews__container'>
+                            <div class="reviews__quotes">“</div>
+                            <div class="reviews__slider slider-reviews swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="slider-reviews__slide swiper-slide">
+                                        <div class="slider-reviews__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla
+                                            eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</div>
+                                        <div class="slider-reviews__info">
+                                            <div class="slider-reviews__name">Elena Pravo</div>
+                                            <div class="slider-reviews__job text">Ceo, Upstate</div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-reviews__slide swiper-slide">
+                                        <div class="slider-reviews__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ullam
+                                            veniam, corrupti veritatis quam iure alias iusto non voluptatum cum? Expedita perspiciatis sunt
+                                            laudantium ipsum quasi. Optio ut vero maxime cupiditate qui nobis quae ipsum eius aperiam repellat,
+                                            explicabo nihil repellendus saepe facilis hic perspiciatis laudantium eaque corrupti assumenda ducimus
+                                            voluptas iusto velit temporibus inventore. Obcaecati similique possimus aliquid ullam sed ab, quae
+                                            assumenda ratione doloremque, aut, laboriosam voluptas error molestias odio? Eos libero est excepturi
+                                            eaque mollitia delectus dolore aut consectetur quaerat at, deserunt veritatis voluptas et perspiciatis
+                                            sapiente iusto placeat omnis dolorem natus assumenda. Alias consequatur ex tempore.</div>
+                                        <div class="slider-reviews__info">
+                                            <div class="slider-reviews__name">Elena Pravo</div>
+                                            <div class="slider-reviews__job text">Ceo, Upstate</div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-reviews__slide swiper-slide">
+                                        <div class="slider-reviews__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quod
+                                            similique quisquam officiis. Ipsum nemo fugiat laborum beatae doloremque officia impedit totam commodi,
+                                            quos dolor hic repellat dolores qui! Laborum dignissimos porro vero iure a cumque voluptate placeat.
+                                            Nisi harum, numquam perferendis fugiat nesciunt ducimus soluta laudantium esse maiores. Rem!</div>
+                                        <div class="slider-reviews__info">
+                                            <div class="slider-reviews__name">Elena Pravo</div>
+                                            <div class="slider-reviews__job text">Ceo, Upstate</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-reviews__buttons">
+                                    <div class="slider-reviews-btn slider-reviews-prev swiper-button-prev">
+                                        <svg width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-reviews-btn slider-reviews-next swiper-button-next">
+                                        <svg width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
+                <section class="gall">
+                    <div class="gall__container">
+                        <div class="gall__box">
+                            <div class="gall__item swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./img/one/1.jpg" alt="img description"></div>
+                                    <div class="swiper-slide"><img src="./img/one/2.jpg" alt="img description"></div>
+                                    <div class="swiper-slide"><img src="./img/one/3.jpg" alt="img description"></div>
+                                    <div class="swiper-slide"><img src="./img/one/4.jpg" alt="img description"></div>
+                                    <div class="swiper-slide"><img src="./img/one/5.jpg" alt="img description"></div>
+                                </div>
+                            </div>
+                            <div class="gall__item swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./img/one/6.jpg" alt="img description"></div>
+                                    <div class="swiper-slide"><img src="./img/one/7.jpg" alt="img description"></div>
+                                    <div class="swiper-slide"><img src="./img/one/8.jpg" alt="img description"></div>
+                                    <div class="swiper-slide"><img src="./img/one/9.jpg" alt="img description"></div>
+                                    <div class="swiper-slide"><img src="./img/one/10.jpg" alt="img description"></div>
+                                    <div class="swiper-slide"><img src="./img/one/11.jpg" alt="img description"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gall__info">
+                            <h2 class="gall__title title">We help people to find homes</h2>
+                            <div class="gall__text text">
+                                <p>Our website provides a convenient and fast way to find suitable apartments. You can choose accommodation based on various criteria such as number of rooms, budget, type of accommodation, and more.</p>
+                            </div>
+                            <div class="link__wrapper">
+                                <a href="#" class="gall__link link">Get in touch</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="begin">
+                    <div class="begin__container">
+                        <div class="begin__slogan">
+                            <h2 class="begin__title title">Let’s simply begin with rentiz.</h2>
+                        </div>
+                        <div class="begin__content">
+                            <div class="begin__text text">
+                                <p>We pay special attention to the quality of the accommodation we offer. We only work with verified owners and agencies to ensure that our clients receive quality accommodation.</p>                          
+                            </div>
+                            <div class="link-wrapper">
+                                <a href="#" class="begin__link link">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="arrow" id="about">
+                    <div class="arrow__container">
+                        <h2 class="arrow__title title">our strengths</h2>
+                        <div class="row">
+                            <button class="btn-exemlpe1 acord-open">Side 1</button>
+                            <div class="btn-exemlpe1-acord ">
+                                <p>
+                                    Our apartment search service is free of charge for all our clients. We also provide additional services such as assistance with relocation and paperwork.
+                                    Our team of professional agents is always ready to help you with any questions related to finding an apartment. We strive to make the process of finding housing as simple and convenient as possible for our clients.
+                                </p>
+                                <p>We offer a wide range of apartments in different areas of the city. Our database includes both new, newly built apartments, as well as old, but updated to meet modern standards of comfort and safety.
+                                    We work with agents and apartment owners who are ready to provide their properties for long-term or short-term rental. We also offer the opportunity to buy apartments to our clients who are looking for permanent residence in the city.</p>
+                            </div>
+                            <button class="btn-exemlpe1">Side 2</button>
+                            <div class="btn-exemlpe1-acord">
+                                <p>Our team of professional agents makes sure that the entire process of finding and renting apartments is as fast and safe as possible for our clients. We are ready to provide advice on all issues related to the choice of housing and the execution of the necessary documents.</p>
+                                <p>We also offer additional services such as apartment cleaning and refurbishment to ensure maximum comfort for our clients. Our goal is to make finding and renting apartments as simple and convenient as possible for all our clients.
+                                     We value each of our clients and are ready to provide an individual approach to each case. We strive for long-term relationships with our customers and are always happy to help them at any time.</p>
+                            </div>
+                            <button class="btn-exemlpe1">Side 3</button>
+                            <div class="btn-exemlpe1-acord">
+                                <p>On our site, you can use various filters to search for accommodation, such as location, number of rooms, rental price and other parameters that will help you narrow down your choices and choose the right options. We also provide detailed apartment descriptions and photographs so you can evaluate the property before viewing.
+
+                                 We guarantee full transparency and honesty in all our operations. We do not charge any hidden fees and always give accurate information about the cost of renting or buying an apartment, as well as about all additional services.</p>
+                            </div>
+                            <button class="btn-exemlpe1">Side 4</button>
+                            <div class="btn-exemlpe1-acord">
+                                <p>If you are unfamiliar with the area of the city where you would like to rent, we can help you with this. Our team knows the city very well and can give you information about the area, its infrastructure, transport accessibility, schools, parks and other important objects.
+                                    Our site is very easy to use and offers a user-friendly interface for finding apartments. You can save your favorites and compare</p>
+                            </div>
+                            <button class="btn-exemlpe1">Side 5</button>
+                            <div class="btn-exemlpe1-acord">
+                                <p>
+                                    Welcome to our website for finding and renting apartments! We offer a wide range of apartments and apartments in different areas of the city to help you find the perfect place to stay.
+                                    Our team is constantly working to provide our customers with the best service. We understand that finding and renting an apartment can be a difficult and tedious process, so we try to make it as easy and convenient as possible for you.
+                                </p>
+                            </div>
+                            <button class="btn-exemlpe1">Side 6</button>
+                            <div class="btn-exemlpe1-acord">
+                                <p>
+                                    On our site, you will find many accommodation options that you can filter according to your preferences, such as the number of rooms, area, area, rental price and many other parameters. In addition, we provide detailed information about each apartment, including photos and descriptions, so you can make the right choice.
+                                    Our team is also ready to help you at every stage of the rental process, from choosing an apartment to concluding a contract and moving into a new home. We guarantee that our service will be completely transparent and reliable, and our prices will be competitive.
+                                    If you have any questions or requests, our team is always ready to help. Contact us in any way convenient for you, and we will answer all your questions.
+                                    Thank you for choosing our service for finding and renting apartments. We hope that our site will help you find the perfect place to stay.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="listing" id="buying">
+                    <div class="listing__container">
+                        <div class="listing-pseudo"><span class="pseudo-title">Our requirements</span></div>
+                        <h2 class="listing-title">How we choose our listings.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam ffffff odio et faucibus.</p>
+                        <div class="listing-wrapper">
+                            <div class="listing-img">
+                                <img src="./img/IMAGE.png" alt="image description">
+                            </div>
+                            <div class="list-criteria">
+                                <div class="criteria-one criteria">
+                                    <div class="criteria-img-wrapper">
+                                        <img class="criteria-img" src="./img/Combined-Shape.png" alt="image description">
+                                    </div>
+                                    <h3>Stellar locations</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="criteria-two criteria">
+                                    <div class="criteria-img-wrapper">
+                                        <img class="criteria-img" src="./img/Shape.png" alt="image description">
+                                    </div>
+                                    <h3>High quality builds</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="criteria-three criteria">
+                                    <div class="criteria-img-wrapper">
+                                        <img class="criteria-img" src="./img/Shape3.png" alt="image description">
+                                    </div>
+                                    <h3>Expert interior design</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cards" id="selling">
+                    <div class="cards__container">
+                        <h2 class="cards__title title">Gallery</h2>
+
+                        <div class="cards__gallery-wrapper">
+                            <div class="item item-1"></div>
+                            <div class="item item-2"></div>
+                            <div class="item item-3"></div>
+                            <div class="item item-4"></div>
+                            <div class="item item-5"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <sectionv class="reviews-two">
+                     <div class="reviews-two__container">
+                        <h2 class="reviews-two__title title">What customers say</h2>
+                        <p class="reviews-two__rseudo-title">Faucibus orci luctus et ultrices posuere cubilia curae.</p>
+
+                        <div class="reviews-two__wrapper">
+                            <div class="coment-wrapper">
+                                <div class="img-wrapper">
+                                    <img src="./img/Vector.png" alt="img"><img src="./img/Vector.png" alt="img"> <img src="./img/Vector.png" alt="img"><img src="./img/Vector.png" alt="img"><img src="./img/Vector.png" alt="img">
+                                </div>
+                                <div class="coment-text">
+                                    <p>
+                                        They provided me with a great selection of apartments in different areas of the city and I found the perfect place to stay. The team was very responsive and helped me every step of the process. I recommend this service to anyone looking for an apartment!"
+                                    </p>
+                                </div>
+                                <div class="user-wrapper">
+                                    <div class="user-img"><img src="./img/icons/IMAGE4.png" alt="img"></div>
+                                </div>
+                                <div class="user-name">
+                                    <b>Michael Webb</b>
+                                    <p>Customer</p>
+                                </div>
+                            </div>
+
+                            <div class="coment-wrapper">
+                                <div class="img-wrapper">
+                                    <img src="./img/Vector.png" alt="img"><img src="./img/Vector.png" alt="img"> <img src="./img/Vector.png" alt="img"><img src="./img/Vector.png" alt="img"><img src="./img/Vector.png" alt="img">
+                                </div>
+                                <div class="coment-text">
+                                    <p>
+                                        I received many offers and chose an apartment that met all my requirements. I recommend this site to anyone who wants to rent an apartment quickly and without hassle! I am very grateful to this site for helping me find an apartment.
+                                        Thanks  you!
+                                    </p>
+                                </div>
+                                <div class="user-wrapper">
+                                    <div class="user-img"><img src="./img/icons/IMAGE5.png" alt="img"></div>
+                                </div>
+                                <div class="user-name">
+                                    <b>Michael Webb</b>
+                                    <p>Customer</p>
+                                </div>
+                            </div>
+
+                            <div class="coment-wrapper">
+                                <div class="img-wrapper">
+                                    <img src="./img/Vector.png" alt="img"><img src="./img/Vector.png" alt="img"> <img src="./img/Vector.png" alt="img"><img src="./img/Vector.png" alt="img"><img src="./img/Vector.png" alt="img">
+                                </div>
+                                <div class="coment-text">
+                                    <p>
+                                        "I have been using this site for several years and they have never let me down. I always find great apartments here in good areas and the team is always ready to help me with any questions. I highly recommend this service to anyone looking for an apartment to rent!"
+                                    </p>
+                                </div>
+                                <div class="user-wrapper">
+                                    <div class="user-img"><img src="./img/icons/IMAGE6.png" alt="img"></div>
+                                </div>
+                                <div class="user-name">
+                                    <b>Michael Webb</b>
+                                    <p>Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </section>
+            </main>
+            <footer class="footer" id="contact">
+                <div class="footer__main">
+                    <div class="main-footer__container">
+                        <div class="footer__block">
+                            <a href="#" class="footer__link"><img src="./img/logo.svg" alt="logo"></a>
+                            <div class="footer__socials">
+                                <a href="#" class="footer__social">
+                                    <span class="icon-facebook2 social"></span>
+                                </a>
+                                <a href="#" class="footer__social">
+                                    <span class="icon-instagram social"></span>
+                                </a>
+                                <a href="#" class="footer__social">
+                                    <span class="icon-twitter social"></span>
+                                </a>
+                                <a href="#" class="footer__social">
+                                    <span class="icon-telegram social"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="footer__block link-footer">
+                            <div class="links-footer__header">Project</div>
+                            <ul class="links-footer__list">
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Houses</a></li>
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Rooms</a></li>
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Flats</a></li>
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Appartments</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__block link-footer">
+                            <div class="links-footer__header">Company</div>
+                            <ul class="links-footer__list">
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">How we work ?</a></li>
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Capital</a></li>
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Security</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__block link-footer">
+                            <div class="links-footer__header">Movement</div>
+                            <ul class="links-footer__list">
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Who are we</a></li>
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Suport us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__block link-footer">
+                            <div class="links-footer__header">Help</div>
+                            <ul class="links-footer__list">
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Privacy</a></li>
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Condition</a></li>
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">Blog</a></li>
+                                <li class="links-footer__item"><a href="#" class="links-footer__link text">FAQs</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+   </div>
+   <a href="#" class="back-to-top"></a>
+    <!-- jQuery --> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+</body>
+</html>

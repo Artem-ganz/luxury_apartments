@@ -1,0 +1,49 @@
+.arrow {
+    position: relative;
+    padding: clamp(1rem, 0.398rem + 3.01vw, 3.125rem) 0;
+    background: linear-gradient(270deg, #1a242f 0.01%, rgba(26,36,47,0) 82.97%);
+    // background: rebeccapurple;
+
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 7px;
+}
+
+.btn-exemlpe1-acord {
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s;
+    border-radius: 10px;
+}
+
+.btn-exemlpe1 {
+    padding: 10px 0;
+    background-color: $accent-color;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    color: $color-text;
+    
+    &:hover {
+        opacity: .7;
+        color: black;
+    }
+}
+
+.acord-open {
+    background-color: rgb(4, 135, 135);
+}
+
+.acord-open+.btn-exemlpe1-acord {
+    max-height: 1500px;
+    transition: max-height 0.5s;
+}

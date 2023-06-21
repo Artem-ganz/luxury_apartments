@@ -1,0 +1,40 @@
+.gallery {
+    display: flex;
+    padding: calc($index * 10) 0 0 0;
+}
+
+.gallery > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-item {
+    max-width: calc($index * 22);
+    margin-bottom: $gallery-gap;
+    max-height: 180vh;
+    border-radius: 10px;
+}
+
+.gallery-left {
+    margin-top: calc($gallery-gap * 1.8);
+}
+
+.gallery-right .gallery-item{
+    margin-bottom: 0;
+    margin-top: $gallery-gap;
+}
+
+.text-block {
+    color: $color-text;
+    position: relative;
+}
+.text-block__h {
+    font-size: 2rem;
+    // line-height: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+.text-block__p {
+    line-height: 1.75;
+}

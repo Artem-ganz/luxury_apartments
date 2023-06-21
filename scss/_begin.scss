@@ -1,0 +1,33 @@
+.begin {
+    position: relative;
+    padding: clamp(1.875rem, -0.852rem + 13.64vw, 11.25rem) 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        max-width: 1240px;
+    }
+
+    &__content {
+        flex: 0 0 50%;
+
+    }
+
+    &__slogan {
+        max-width: 512px;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 144%;
+        text-transform: capitalize;
+        color: #FFFFFF;
+
+        @media (max-width: 500px) {
+            font-size: 28px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+}
